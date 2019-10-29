@@ -1,6 +1,8 @@
 # corre 🏃🏾‍♂️
 
-![corre](https://media.giphy.com/media/l2Sqc3POpzkj5r8SQ/giphy.gif 'Corre')
+<p align="center">
+  <img alt="Corre" src="https://media.giphy.com/media/l2Sqc3POpzkj5r8SQ/giphy.gif" />
+</p>
 
 ## What
 
