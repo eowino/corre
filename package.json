@@ -3,6 +3,13 @@
 	"version": "0.0.1",
 	"description": "run your npm scripts",
 	"main": "dist/index.js",
+	"files": [
+		"dist/**/*",
+		"bin/**/*"
+	],
+	"engines": {
+		"node": ">=9.11.2"
+	},
 	"scripts": {
 		"start": "tsc --watch",
 		"build": "npm run clean && tsc",
@@ -18,6 +25,12 @@
 	},
 	"author": "Evans Owino",
 	"license": "MIT",
+	"keywords": [
+		"npm scripts",
+		"execute",
+		"script",
+		"tool"
+	],
 	"lint-staged": {
 		"*.{json,md}": [
 			"prettier --write",
