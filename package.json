@@ -1,6 +1,6 @@
 {
 	"name": "corre",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"description": "run your npm scripts",
 	"main": "dist/index.js",
 	"files": [
