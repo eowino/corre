@@ -24,9 +24,7 @@ module.exports = {
         // https://eslint.org/docs/rules/no-bitwise
         'no-bitwise': defaultSeverity,
         // https://eslint.org/docs/rules/no-console
-        'no-console': [defaultSeverity, {
-            'allow': ['warn', 'error']
-        }],
+        'no-console': 'off',
         // https://eslint.org/docs/rules/no-undef
         'no-undef': 'off',
         // https://eslint.org/docs/rules/no-var
@@ -43,6 +41,9 @@ module.exports = {
         }],
         // https://eslint.org/docs/rules/no-eval
         'no-eval': 'error',
+
+        'quotes': 'off',
+        '@typescript-eslint/no-var-requires': 'off',
 
         // https://github.com/prettier/eslint-plugin-prettier#options
         'prettier/prettier': [defaultSeverity, {
