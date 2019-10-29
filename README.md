@@ -1,7 +1,7 @@
 # corre 🏃🏾‍♂️
 
 <p align="center">
-  <img alt="Corre" src="https://media.giphy.com/media/l2Sqc3POpzkj5r8SQ/giphy.gif" />
+  <img alt="Corre" src="https://i.giphy.com/media/l2Sqc3POpzkj5r8SQ/giphy.webp" />
 </p>
 
 ## What
