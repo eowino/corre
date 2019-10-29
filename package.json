@@ -21,7 +21,8 @@
 		"format:check": "eslint . '**/*.{js,ts}'",
 		"precommit": "./scripts/pre-commit-check.sh && lint-staged",
 		"test": "jest",
-		"test:watch": "jest --watch"
+		"test:watch": "jest --watch",
+		"prepublish": "npm run build"
 	},
 	"author": "Evans Owino",
 	"license": "MIT",
