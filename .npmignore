@@ -1,0 +1,12 @@
+.vscode
+.git
+scripts
+test
+src
+.editorconfig
+.eslintignore
+.eslintrc.js
+.gitignore
+.prettierrc
+jest.config.js
+tsconfig.json
