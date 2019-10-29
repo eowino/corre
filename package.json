@@ -8,7 +8,7 @@
 		"bin/**/*"
 	],
 	"engines": {
-		"node": ">=9.11.2"
+		"node": ">=8.10.0"
 	},
 	"scripts": {
 		"start": "tsc --watch",
