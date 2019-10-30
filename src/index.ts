@@ -1,10 +1,11 @@
 import { join } from 'path';
 import { existsSync } from 'fs';
-import { exec } from 'child_process';
+import { spawn } from 'child_process';
 import inquirer from 'inquirer';
 
 const CLIMB = '../';
 const MAX_CLIMB = 10;
+const EXIT_CODE_OK = 0;
 
 async function inquireScripts(scripts: string[]) {
     const { script }: { script: string } = await inquirer.prompt({
@@ -56,18 +57,15 @@ function getScriptsFromPackage(): string[] {
 (async () => {
     const scripts = getScriptsFromPackage();
     const script = await inquireScripts(scripts);
-    const cmd = `npm run ${script}`;
+    const npm = spawn('npm', ['run', script]);
 
-    exec(cmd, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`exec error: ${error}`);
-            return;
+    npm.stdout.on('data', (data) => console.log(String(data)));
+    npm.stderr.on('data', (data) => console.log(String(data)));
+    npm.on('close', (code) => {
+        if (code !== EXIT_CODE_OK) {
+            console.log(`corre CLI exited with code ${code}`);
         }
 
-        console.log(stdout);
-
-        if (stderr) {
-            console.error(`stderr: ${stderr}`);
-        }
+        npm.stdin.end();
     });
 })();
