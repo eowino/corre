@@ -1,3 +1,5 @@
+**N.B.** Coming to an npm registry near you 🕐
+
 # corre 🏃🏾‍♂️
 
 <p align="center">
