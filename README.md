@@ -33,7 +33,7 @@ npx corre
 ## HOW
 
 1. Looks for `package.json` in the current directory
-    - Walks a maximum of 10 directories up until it finds `package.json`. Exists if not found.
+    - Walks a maximum of 10 directories up until it finds `package.json`. Exits if not found.
 2. Provides a keyboard navigable list of scripts to run
 3. Choose a script and press the `Enter` key
 4. Done 🎉
