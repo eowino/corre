@@ -2,6 +2,15 @@
 	"name": "corre",
 	"version": "1.0.1",
 	"description": "run your npm scripts",
+	"author": "Evans Owino",
+	"homepage": "https://github.com/eowino/corre",
+	"license": "MIT",
+	"keywords": [
+		"npm scripts",
+		"execute",
+		"script",
+		"tool"
+	],
 	"main": "dist/index.js",
 	"files": [
 		"dist/**/*",
@@ -9,6 +18,9 @@
 	],
 	"engines": {
 		"node": ">=8.10.0"
+	},
+	"bin": {
+		"corre": "./bin/index.js"
 	},
 	"scripts": {
 		"start": "tsc --watch",
@@ -19,20 +31,12 @@
 		"run": "npm run build && node dist/index.js",
 		"format": "eslint . --fix '**/*.{js,ts}'",
 		"format:check": "eslint . '**/*.{js,ts}'",
-		"precommit": "./scripts/pre-commit-check.sh && lint-staged",
+		"precommit": "lint-staged",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"prepare": "npm run build",
 		"postpublish": "git push --tags"
 	},
-	"author": "Evans Owino",
-	"license": "MIT",
-	"keywords": [
-		"npm scripts",
-		"execute",
-		"script",
-		"tool"
-	],
 	"lint-staged": {
 		"*.{json,md}": [
 			"prettier --write",
