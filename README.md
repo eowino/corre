@@ -1,3 +1,5 @@
+[![npm version](https://badge.fury.io/js/corre.svg)](https://npmjs.org/package/corre 'View this project on npm')
+
 # corre 🏃🏾‍♂️
 
 <p align="center">
