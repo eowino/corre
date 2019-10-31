@@ -1,6 +1,6 @@
 {
 	"name": "corre",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "run your npm scripts",
 	"main": "dist/index.js",
 	"files": [
@@ -22,7 +22,8 @@
 		"precommit": "./scripts/pre-commit-check.sh && lint-staged",
 		"test": "jest",
 		"test:watch": "jest --watch",
-		"prepublish": "npm run build"
+		"prepare": "npm run build",
+		"postpublish": "git push --tags"
 	},
 	"author": "Evans Owino",
 	"license": "MIT",
