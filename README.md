@@ -35,3 +35,7 @@ npx corre
 2. Provides a keyboard navigable list of scripts to run
 3. Choose a script and press the `Enter` key
 4. Done 🎉
+
+<p align="center">
+  <img alt="Corre" src="https://user-images.githubusercontent.com/9787512/67953071-52b2a500-fbe6-11e9-83ae-d729d5089ed1.gif" />
+</p>
